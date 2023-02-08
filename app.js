@@ -23,4 +23,47 @@ if ((conRes == false)) {
 
 } else {
 
-} 
+}
+var Yes = "Yes";
+var No = "No";
+var invalid = "";
+var liveAns = prompt("Do you live in Jordan ?(Yes / No)");
+if (liveAns == invalid) {
+    console.log("invalid");
+    var liveAns = "invalid";
+}
+if (liveAns == Yes) {
+    console.log("Yes");
+}
+if (liveAns == No) {
+    console.log("No");
+}
+var employmentAns = prompt("Are you an employee ?(Yes / No)");
+if (employmentAns =="" ) {
+    console.log("invalid");
+    var employmentAns = "invalid";
+}
+if (employmentAns == Yes) {
+    console.log("Yes");
+}
+if (employmentAns == No) {
+    console.log("No");
+}
+var choclateAns = prompt("Do you love choclate ?(Yes / No)");
+if (choclateAns == "") {
+    console.log("invalid");
+    var choclateAns = "invalid";
+}
+if (choclateAns == Yes) {
+    console.log("Yes");
+}
+if (choclateAns == No) {
+    console.log("No");
+}
+var arr = [liveAns, employmentAns, choclateAns];
+console.log(arr);
+
+ 
+for (let i= arr.length-1; i>=0 ; i--) {
+   console.log (arr[i]);
+}
